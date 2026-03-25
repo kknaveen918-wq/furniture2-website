@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | LUXE Premium Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUXE</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link active">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    <span class="cart-icon">Cart</span>
+                    <span class="cart-count" style="display: none;">0</span>
+                </a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1 class="page-title">Our Collection</h1>
+            <p class="page-subtitle">Discover furniture that defines luxury living</p>
+        </div>
+    </section>
+
+    <section class="products-page">
+        <div class="container">
+            <div class="products-toolbar">
+                <div class="filter-info">
+                    <span class="results-count">Showing 12 Products</span>
+                </div>
+                <div class="sort-options">
+                    <select class="sort-select">
+                        <option>Sort by: Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest First</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid-full">
+                <div class="product-card">
+                    <a href="product-details.html?id=1" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551298370-9d3d53a5c220?w=500&h=500&fit=crop" alt="Velvet Sofa">
+                            <div class="product-badge">New</div>
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=1"><h3 class="product-name">Velvet Chesterfield</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(24 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,03,350</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="1">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="1">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=2" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop" alt="Modern Armchair">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=2"><h3 class="product-name">Nordic Armchair</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(18 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹73,870</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="2">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="2">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=3" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=500&h=500&fit=crop" alt="Dining Table">
+                            <div class="product-badge sale">Sale</div>
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=3"><h3 class="product-name">Marble Dining Table</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(32 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price"><span class="old-price">₹2,65,600</span> ₹2,12,480</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="3">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="3">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=4" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=500&h=500&fit=crop" alt="King Bed">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=4"><h3 class="product-name">Canopy King Bed</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(15 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹3,40,300</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="4">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="4">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=5" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=500&h=500&fit=crop" alt="Coffee Table">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=5"><h3 class="product-name">Geometric Coffee Table</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(21 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹99,600</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="5">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="5">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=6" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop" alt="Bookshelf">
+                            <div class="product-badge">Bestseller</div>
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=6"><h3 class="product-name">Modular Bookshelf</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(42 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,53,550</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="6">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="6">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=7" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop" alt="Modern Sofa">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=7"><h3 class="product-name">Modern Sectional Sofa</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(56 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹3,22,870</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="7">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="7">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=8" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&h=500&fit=crop" alt="Accent Chair">
+                            <div class="product-badge sale">Sale</div>
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=8"><h3 class="product-name">Velvet Accent Chair</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(28 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price"><span class="old-price">₹99,600</span> ₹79,680</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="8">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="8">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=9" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=500&h=500&fit=crop" alt="Wooden Table">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=9"><h3 class="product-name">Rustic Console Table</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(19 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹64,740</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="9">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="9">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=10" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&h=500&fit=crop" alt="Luxury Bed">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=10"><h3 class="product-name">Platform Queen Bed</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(38 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,36,550</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="10">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="10">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=11" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=500&h=500&fit=crop" alt="Nightstand">
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=11"><h3 class="product-name">Marble Nightstand</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(12 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹37,350</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="11">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="11">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <a href="product-details.html?id=12" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop&q=80" alt="Leather Sofa">
+                            <div class="product-badge">New</div>
+                            <div class="product-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=12"><h3 class="product-name">Italian Leather Sofa</h3></a>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(67 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹4,31,600</span>
+                            <div class="product-actions">
+                                <button class="btn btn-cart" data-product-id="12">
+                                    <span class="btn-text">Add to Cart</span>
+                                </button>
+                                <button class="btn btn-buy" data-buy-id="12">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="pagination-arrow prev">←</a>
+                <a href="#" class="pagination-link active">1</a>
+                <a href="#" class="pagination-link">2</a>
+                <a href="#" class="pagination-link">3</a>
+                <span class="pagination-ellipsis">...</span>
+                <a href="#" class="pagination-link">6</a>
+                <a href="#" class="pagination-arrow next">→</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">LUXE</a>
+                    <p class="footer-tagline">Elevating spaces, enriching lives through exceptional furniture design.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">pin</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html">Sofas</a></li>
+                        <li><a href="products.html">Chairs</a></li>
+                        <li><a href="products.html">Tables</a></li>
+                        <li><a href="products.html">Beds</a></li>
+                        <li><a href="products.html">Lighting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 LUXE Furniture. All rights reserved.</p>
+                <p class="developer-credit">Developed by <strong>K.Naveenkumar</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

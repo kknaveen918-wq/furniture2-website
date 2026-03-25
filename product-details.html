@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | LUXE Premium Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUXE</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    <span class="cart-icon">Cart</span>
+                    <span class="cart-count" style="display: none;">0</span>
+                </a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-sep">/</span>
+            <a href="products.html">Products</a>
+            <span class="breadcrumb-sep">/</span>
+            <span class="breadcrumb-current" id="breadcrumbTitle">Loading...</span>
+        </div>
+    </section>
+
+    <section class="product-details">
+        <div class="container">
+            <div class="product-details-grid">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="" alt="Product Image" id="mainImage">
+                    </div>
+                    <div class="thumbnail-gallery" id="thumbnailGallery">
+                    </div>
+                </div>
+
+                <div class="product-info-details">
+                    <div class="product-badge-row">
+                        <span class="product-badge" id="productBadge">New Arrival</span>
+                        <span class="product-sku" id="productSku">SKU: LUX-001</span>
+                    </div>
+
+                    <h1 class="product-title" id="productTitle">Loading...</h1>
+
+                    <div class="product-rating-details">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text" id="productRating">5.0 (0 reviews)</span>
+                    </div>
+
+                    <div class="product-price-details">
+                        <span class="current-price" id="productPrice">$0</span>
+                        <span class="availability">In Stock</span>
+                    </div>
+
+                    <p class="product-description-details" id="productDescription">
+                        Loading product details...
+                    </p>
+
+                    <div class="product-features">
+                        <h3>Features</h3>
+                        <ul class="features-list" id="productFeatures">
+                        </ul>
+                    </div>
+
+                    <div class="color-selector">
+                        <h4>Color: <span class="selected-color">As Shown</span></h4>
+                        <div class="color-options">
+                            <span class="color-option active" style="background: #666;" title="Default"></span>
+                        </div>
+                    </div>
+
+                    <div class="quantity-selector">
+                        <h4>Quantity</h4>
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" id="qtyMinus">−</button>
+                            <input type="number" value="1" min="1" max="10" class="qty-input" id="qtyInput">
+                            <button class="qty-btn plus" id="qtyPlus">+</button>
+                        </div>
+                    </div>
+
+                    <div class="product-actions-details">
+                        <button class="btn btn-cart-details" id="addToCartBtn" data-product-id="1">
+                            <span class="btn-text">Add to Cart</span>
+                        </button>
+                        <button class="btn btn-buy-details" id="buyNowBtn" data-buy-id="1">Buy Now</button>
+                    </div>
+
+                    <div class="product-trust">
+                        <div class="trust-item">
+                            <span class="trust-icon">🚚</span>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">↩</span>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">✓</span>
+                            <span>5-Year Warranty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <p class="section-subtitle">Complete your living room collection</p>
+            <div class="related-grid" id="relatedProducts">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">LUXE</a>
+                    <p class="footer-tagline">Elevating spaces, enriching lives through exceptional furniture design.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">pin</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html">Sofas</a></li>
+                        <li><a href="products.html">Chairs</a></li>
+                        <li><a href="products.html">Tables</a></li>
+                        <li><a href="products.html">Beds</a></li>
+                        <li><a href="products.html">Lighting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 LUXE Furniture. All rights reserved.</p>
+                <p class="developer-credit">Developed by <strong>K.Naveenkumar</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Product Details Page Specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get product ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            let productId = parseInt(urlParams.get('id')) || 1;
+            
+            // Product descriptions and features
+            const productData = {
+                1: {
+                    name: "Velvet Chesterfield",
+                    price: 203350,
+                    badge: "New Arrival",
+                    sku: "LUX-SOF-001",
+                    rating: "5.0 (24 reviews)",
+                    description: "A masterpiece of classic design reimagined for modern living. The Velvet Chesterfield combines timeless elegance with contemporary comfort, featuring deep button tufting, rolled arms, and sumptuous velvet upholstery.",
+                    features: [
+                        { label: "Material", value: "Premium velvet upholstery with solid oak frame" },
+                        { label: "Dimensions", value: "84\"W x 36\"D x 30\"H" },
+                        { label: "Seating", value: "3-person capacity" },
+                        { label: "Cushions", value: "High-density foam with fiber wrap" },
+                        { label: "Legs", value: "Hand-carved solid walnut" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1551298370-9d3d53a5c220?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1550226891-ef816aed4a98?w=800&h=800&fit=crop"
+                    ]
+                },
+                2: {
+                    name: "Nordic Armchair",
+                    price: 73870,
+                    badge: "Popular",
+                    sku: "LUX-CHR-002",
+                    rating: "5.0 (18 reviews)",
+                    description: "Embrace Scandinavian simplicity with this elegantly designed armchair. Clean lines, comfortable cushioning, and a minimalist aesthetic make it perfect for any modern living space.",
+                    features: [
+                        { label: "Material", value: "Boucle fabric with solid beech wood frame" },
+                        { label: "Dimensions", value: "28\"W x 32\"D x 33\"H" },
+                        { label: "Seat Height", value: "17\"" },
+                        { label: "Weight Capacity", value: "350 lbs" },
+                        { label: "Assembly", value: "Minimal assembly required" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&h=800&fit=crop"
+                    ]
+                },
+                3: {
+                    name: "Marble Dining Table",
+                    price: 212480,
+                    originalPrice: 265600,
+                    badge: "Sale",
+                    sku: "LUX-TBL-003",
+                    rating: "4.5 (32 reviews)",
+                    description: "Make a statement with this stunning Italian marble dining table. The natural veining of the marble top paired with a sleek oak base creates a perfect balance of luxury and functionality.",
+                    features: [
+                        { label: "Material", value: "Italian Carrara marble top with solid oak base" },
+                        { label: "Dimensions", value: "72\"L x 36\"W x 30\"H" },
+                        { label: "Seating", value: "6-8 persons" },
+                        { label: "Weight", value: "185 lbs" },
+                        { label: "Care", value: "Sealed marble surface for easy cleaning" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop"
+                    ]
+                },
+                4: {
+                    name: "Canopy King Bed",
+                    price: 340300,
+                    badge: "Premium",
+                    sku: "LUX-BED-004",
+                    rating: "5.0 (15 reviews)",
+                    description: "Sleep like royalty in this magnificent canopy bed. The upholstered frame features elegant detailing and is finished with rich walnut posts that add warmth and sophistication to your bedroom.",
+                    features: [
+                        { label: "Material", value: "Upholstered frame with solid walnut posts" },
+                        { label: "Dimensions", value: "86\"L x 82\"W x 90\"H" },
+                        { label: "Mattress Size", value: "King" },
+                        { label: "Weight Capacity", value: "800 lbs" },
+                        { label: "Style", value: "Traditional with modern touches" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1588046130717-0eb0c9a3ba15?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=800&fit=crop"
+                    ]
+                },
+                5: {
+                    name: "Geometric Coffee Table",
+                    price: 99600,
+                    badge: "Trending",
+                    sku: "LUX-TBL-005",
+                    rating: "4.5 (21 reviews)",
+                    description: "A striking centerpiece featuring a geometric design with brass-finished legs and smoked glass top. The contemporary silhouette adds architectural interest to any living room.",
+                    features: [
+                        { label: "Material", value: "Brass-finished steel legs with smoked glass top" },
+                        { label: "Dimensions", value: "48\"L x 24\"W x 16\"H" },
+                        { label: "Shape", value: "Geometric/Hexagonal" },
+                        { label: "Weight Capacity", value: "75 lbs" },
+                        { label: "Style", value: "Art Deco inspired" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1611486212557-88be5ff6f941?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop"
+                    ]
+                },
+                6: {
+                    name: "Modular Bookshelf",
+                    price: 153550,
+                    badge: "Bestseller",
+                    sku: "LUX-STR-006",
+                    rating: "5.0 (42 reviews)",
+                    description: "Design your perfect storage solution with this modular bookshelf system. Each cube can be arranged to fit your space, allowing for endless configurations and personalization.",
+                    features: [
+                        { label: "Material", value: "Engineered wood with melamine finish" },
+                        { label: "Dimensions", value: "Variable - each cube is 15\" x 15\" x 15\"" },
+                        { label: "Configuration", value: "5 cubes (customizable)" },
+                        { label: "Assembly", value: "Tool-free assembly" },
+                        { label: "Colors", value: "Matte white, walnut, or black" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1594620302200-9a762244a156?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop"
+                    ]
+                },
+                7: {
+                    name: "Modern Sectional Sofa",
+                    price: 322870,
+                    badge: "New",
+                    sku: "LUX-SOF-007",
+                    rating: "5.0 (56 reviews)",
+                    description: "Transform your living space with this luxurious L-shaped sectional. Featuring premium leather upholstery, deep seats, and modular configuration, it's designed for both comfort and style.",
+                    features: [
+                        { label: "Material", value: "Top-grain Italian leather" },
+                        { label: "Dimensions", value: "112\"W x 85\"D x 32\"H" },
+                        { label: "Configuration", value: "Reversible L-shape" },
+                        { label: "Cushions", value: "Down-blend fill with memory foam" },
+                        { label: "Assembly", value: "Professional white-glove delivery" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1551298370-9d3d53a5c220?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1550226891-ef816aed4a98?w=800&h=800&fit=crop"
+                    ]
+                },
+                8: {
+                    name: "Velvet Accent Chair",
+                    price: 79680,
+                    originalPrice: 99600,
+                    badge: "Sale",
+                    sku: "LUX-CHR-008",
+                    rating: "4.5 (28 reviews)",
+                    description: "Add a pop of color and luxury to any room with this plush velvet accent chair. The curved back and gold-finished legs create an eye-catching silhouette that's both comfortable and stylish.",
+                    features: [
+                        { label: "Material", value: "Soft velvet upholstery with metal legs" },
+                        { label: "Dimensions", value: "26\"W x 28\"D x 30\"H" },
+                        { label: "Seat Height", value: "17\"" },
+                        { label: "Legs", value: "Gold-finished steel" },
+                        { label: "Colors", value: "Emerald, navy, blush, mustard" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1580480055273-228ff5388ef8?w=800&h=800&fit=crop"
+                    ]
+                },
+                9: {
+                    name: "Rustic Console Table",
+                    price: 64740,
+                    badge: "Handcrafted",
+                    sku: "LUX-TBL-009",
+                    rating: "5.0 (19 reviews)",
+                    description: "Bring natural warmth to your entryway or living space with this rustic console table. The live-edge acacia wood top sits atop a sturdy metal base, creating a beautiful contrast of organic and industrial elements.",
+                    features: [
+                        { label: "Material", value: "Live-edge acacia wood with powder-coated steel" },
+                        { label: "Dimensions", value: "48\"L x 14\"W x 32\"H" },
+                        { label: "Weight", value: "45 lbs" },
+                        { label: "Each piece", value: "Unique grain patterns" },
+                        { label: "Finish", value: "Natural oil seal" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop"
+                    ]
+                },
+                10: {
+                    name: "Platform Queen Bed",
+                    price: 236550,
+                    badge: "Best Value",
+                    sku: "LUX-BED-010",
+                    rating: "5.0 (38 reviews)",
+                    description: "Simplicity meets sophistication in this modern platform bed. The low-profile design and upholstered headboard create a serene bedroom retreat, while the solid construction ensures years of restful sleep.",
+                    features: [
+                        { label: "Material", value: "Solid hardwood frame with linen upholstery" },
+                        { label: "Dimensions", value: "65\"W x 88\"L x 45\"H" },
+                        { label: "Mattress Size", value: "Queen" },
+                        { label: "Slat System", value: "Includes center support and slats" },
+                        { label: "Box Spring", value: "Not required" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1588046130717-0eb0c9a3ba15?w=800&h=800&fit=crop"
+                    ]
+                },
+                11: {
+                    name: "Marble Nightstand",
+                    price: 37350,
+                    badge: "Elegant",
+                    sku: "LUX-NS-011",
+                    rating: "4.5 (12 reviews)",
+                    description: "Complement your bedroom with this elegant marble-topped nightstand. The natural stone surface adds luxury while the drawer provides convenient storage for bedside essentials.",
+                    features: [
+                        { label: "Material", value: "Marble top with solid wood drawer" },
+                        { label: "Dimensions", value: "18\"L x 18\"W x 24\"H" },
+                        { label: "Storage", value: "1 soft-close drawer" },
+                        { label: "Weight", value: "25 lbs" },
+                        { label: "Colors", value: "White marble, gray marble, travertine" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop"
+                    ]
+                },
+                12: {
+                    name: "Italian Leather Sofa",
+                    price: 431600,
+                    badge: "Luxury",
+                    sku: "LUX-SOF-012",
+                    rating: "5.0 (67 reviews)",
+                    description: "Indulge in ultimate luxury with this premium Italian leather sofa. Handcrafted by master artisans, each sofa features butter-soft full-grain leather and meticulous stitching details.",
+                    features: [
+                        { label: "Material", value: "Full-grain Italian leather" },
+                        { label: "Dimensions", value: "90\"W x 40\"D x 34\"H" },
+                        { label: "Seating", value: "3-person" },
+                        { label: "Cushions", value: "High-resilience foam with down topper" },
+                        { label: "Warranty", value: "Lifetime frame warranty" }
+                    ],
+                    images: [
+                        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1551298370-9d3d53a5c220?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?w=800&h=800&fit=crop",
+                        "https://images.unsplash.com/photo-1550226891-ef816aed4a98?w=800&h=800&fit=crop"
+                    ]
+                }
+            };
+            
+            // Load product data
+            const product = productData[productId] || productData[1];
+            
+            // Update page elements
+            document.getElementById('breadcrumbTitle').textContent = product.name;
+            document.getElementById('productTitle').textContent = product.name;
+            document.getElementById('productSku').textContent = 'SKU: ' + product.sku;
+            document.getElementById('productRating').textContent = product.rating;
+            document.getElementById('productDescription').textContent = product.description;
+            document.getElementById('mainImage').src = product.images[0];
+            document.getElementById('mainImage').alt = product.name;
+            
+            // Update badge
+            const badgeEl = document.getElementById('productBadge');
+            badgeEl.textContent = product.badge;
+            if (product.originalPrice) {
+                badgeEl.classList.add('sale');
+            }
+            
+            // Update price
+            const priceEl = document.getElementById('productPrice');
+            if (product.originalPrice) {
+                priceEl.innerHTML = '<span class="old-price">₹' + product.originalPrice.toLocaleString() + '</span> ₹' + product.price.toLocaleString();
+            
+            // Update price
+            const priceEl = document.getElementById('productPrice');
+            if (product.originalPrice) {
+                priceEl.innerHTML = '<span class="old-price">₹' + product.originalPrice.toLocaleString() + '</span> ₹' + product.price.toLocaleString();
+            } else {
+                priceEl.textContent = '₹' + product.price.toLocaleString();
+            }
+            
+            // Update title
+            document.title = product.name + ' | LUXE Premium Furniture';
+            
+            // Update features
+            const featuresEl = document.getElementById('productFeatures');
+            featuresEl.innerHTML = product.features.map(f => 
+                '<li><span class="feature-icon">◇</span><span><strong>' + f.label + ':</strong> ' + f.value + '</span></li>'
+            ).join('');
+            
+            // Update thumbnails
+            const thumbEl = document.getElementById('thumbnailGallery');
+            thumbEl.innerHTML = product.images.map((img, i) => 
+                '<div class="thumbnail' + (i === 0 ? ' active' : '') + '">' +
+                '<img src="' + img.replace('w=800', 'w=200').replace('h=800', 'h=200') + '" alt="View ' + (i+1) + '" onclick="changeImage(\'' + img + '\')">' +
+                '</div>'
+            ).join('');
+            
+            // Update button data attributes
+            document.getElementById('addToCartBtn').setAttribute('data-product-id', productId);
+            document.getElementById('buyNowBtn').setAttribute('data-buy-id', productId);
+            
+            // Quantity controls
+            const qtyInput = document.getElementById('qtyInput');
+            const qtyMinus = document.getElementById('qtyMinus');
+            const qtyPlus = document.getElementById('qtyPlus');
+            
+            qtyMinus.addEventListener('click', function() {
+                let val = parseInt(qtyInput.value) || 1;
+                if (val > 1) qtyInput.value = val - 1;
+            });
+            
+            qtyPlus.addEventListener('click', function() {
+                let val = parseInt(qtyInput.value) || 1;
+                if (val < 10) qtyInput.value = val + 1;
+            });
+            
+            qtyInput.addEventListener('change', function() {
+                let val = parseInt(this.value) || 1;
+                if (val < 1) this.value = 1;
+                if (val > 10) this.value = 10;
+            });
+            
+            // Load related products
+            loadRelatedProducts(productId);
+            
+            // Initialize add to cart button click handler
+            document.getElementById('addToCartBtn').addEventListener('click', function() {
+                const productId = parseInt(this.getAttribute('data-product-id'));
+                const quantity = parseInt(qtyInput.value) || 1;
+                
+                addToCart(productId, quantity);
+                
+                this.classList.add('added');
+                this.innerHTML = '<span class="btn-text">Added ✓</span>';
+                
+                setTimeout(() => {
+                    this.classList.remove('added');
+                    this.innerHTML = '<span class="btn-text">Add to Cart</span>';
+                }, 2000);
+            });
+            
+            // Initialize buy now button
+            document.getElementById('buyNowBtn').addEventListener('click', function() {
+                const productId = parseInt(this.getAttribute('data-buy-id'));
+                const quantity = parseInt(qtyInput.value) || 1;
+                
+                addToCart(productId, quantity);
+                window.location.href = 'cart.html';
+            });
+        });
+        
+        function changeImage(src) {
+            document.getElementById('mainImage').src = src;
+            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+            document.querySelector('.thumbnail img[src*="' + src.split('?')[1].split('&')[0] + '"]').closest('.thumbnail').classList.add('active');
+        }
+        
+        function loadRelatedProducts(currentId) {
+            const relatedIds = [2, 5, 6, 8].filter(id => id !== currentId).slice(0, 4);
+            const relatedNames = {
+                2: { name: "Nordic Armchair", price: 73870, img: "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop" },
+                5: { name: "Geometric Coffee Table", price: 99600, img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=500&h=500&fit=crop" },
+                6: { name: "Modular Bookshelf", price: 153550, img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop", badge: "Bestseller" },
+                8: { name: "Velvet Accent Chair", price: 79680, img: "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&h=500&fit=crop" }
+            };
+            
+            const container = document.getElementById('relatedProducts');
+            container.innerHTML = relatedIds.map(id => {
+                const p = relatedNames[id];
+                return '<div class="product-card">' +
+                    '<a href="product-details.html?id=' + id + '" class="product-image-link">' +
+                    '<div class="product-image">' +
+                    '<img src="' + p.img + '" alt="' + p.name + '">' +
+                    (p.badge ? '<div class="product-badge">' + p.badge + '</div>' : '') +
+                    '<div class="product-overlay"><span class="view-details">View Details</span></div>' +
+                    '</div></a>' +
+                    '<div class="product-info">' +
+                    '<a href="product-details.html?id=' + id + '"><h3 class="product-name">' + p.name + '</h3></a>' +
+                    '<div class="product-footer">' +
+                    '<span class="product-price">₹' + p.price.toLocaleString() + '</span>' +
+                    '<button class="btn btn-cart" data-product-id="' + id + '"><span class="btn-text">Add to Cart</span></button>' +
+                    '</div></div></div>';
+            }).join('');
+        }
+    </script>
+</body>
+</html>

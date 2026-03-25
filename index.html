@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE | Premium Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">LUXE</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="products.html" class="nav-link">Products</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="cart.html" class="nav-link cart-link">
+                    <span class="cart-icon">Cart</span>
+                    <span class="cart-count" style="display: none;">0</span>
+                </a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Redefine Your Living Space</h1>
+            <p class="hero-subtitle">Elegant Furniture for Modern Homes</p>
+            <a href="products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <p class="section-subtitle">Find the perfect piece for every room</p>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop" alt="Luxury Sofa">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Sofas</h3>
+                        <a href="products.html" class="category-link">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop" alt="Modern Chair">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Chairs</h3>
+                        <a href="products.html" class="category-link">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?w=600&h=400&fit=crop" alt="Designer Table">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Tables</h3>
+                        <a href="products.html" class="category-link">Explore</a>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&h=400&fit=crop" alt="Luxury Bed">
+                    </div>
+                    <div class="category-overlay">
+                        <h3>Beds</h3>
+                        <a href="products.html" class="category-link">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            <p class="section-subtitle">Curated pieces for timeless elegance</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <a href="product-details.html?id=1" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1551298370-9d3d53a5c220?w=500&h=500&fit=crop" alt="Velvet Sofa">
+                            <div class="product-badge">New</div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=1"><h3 class="product-name">Velvet Chesterfield</h3></a>
+                        <p class="product-description">Classic design with modern comfort</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,03,350</span>
+                            <button class="btn btn-cart" data-product-id="1">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="product-details.html?id=2" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop" alt="Modern Armchair">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=2"><h3 class="product-name">Nordic Armchair</h3></a>
+                        <p class="product-description">Minimalist Scandinavian style</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹73,870</span>
+                            <button class="btn btn-cart" data-product-id="2">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="product-details.html?id=3" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=500&h=500&fit=crop" alt="Dining Table">
+                            <div class="product-badge sale">Sale</div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=3"><h3 class="product-name">Marble Dining Table</h3></a>
+                        <p class="product-description">Italian marble top with oak base</p>
+                        <div class="product-footer">
+                            <span class="product-price"><span class="old-price">₹2,65,600</span> ₹2,12,480</span>
+                            <button class="btn btn-cart" data-product-id="3">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="product-details.html?id=4" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=500&h=500&fit=crop" alt="King Bed">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=4"><h3 class="product-name">Canopy King Bed</h3></a>
+                        <p class="product-description">Upholstered frame with walnut finish</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹3,40,300</span>
+                            <button class="btn btn-cart" data-product-id="4">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="product-details.html?id=5" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?w=500&h=500&fit=crop" alt="Coffee Table">
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=5"><h3 class="product-name">Geometric Coffee Table</h3></a>
+                        <p class="product-description">Brass legs with smoked glass top</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹99,600</span>
+                            <button class="btn btn-cart" data-product-id="5">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <a href="product-details.html?id=6" class="product-image-link">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop" alt="Bookshelf">
+                            <div class="product-badge">Bestseller</div>
+                        </div>
+                    </a>
+                    <div class="product-info">
+                        <a href="product-details.html?id=6"><h3 class="product-name">Modular Bookshelf</h3></a>
+                        <p class="product-description">Customizable wall storage system</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹1,53,550</span>
+                            <button class="btn btn-cart" data-product-id="6">
+                                <span class="btn-text">Add to Cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=600&fit=crop" alt="Featured Collection">
+                    <div class="featured-glow"></div>
+                </div>
+                <div class="featured-text">
+                    <span class="featured-label">Limited Edition</span>
+                    <h2 class="featured-title">The Artisan Collection</h2>
+                    <p class="featured-description">Handcrafted by master artisans using centuries-old techniques. Each piece tells a story of passion, precision, and timeless beauty. Our Artisan Collection represents the pinnacle of luxury furniture design.</p>
+                    <ul class="featured-features">
+                        <li>100% Handcrafted</li>
+                        <li>Sustainable Materials</li>
+                        <li>Lifetime Warranty</li>
+                    </ul>
+                    <a href="products.html" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by design enthusiasts worldwide</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="testimonial-text">"The quality is exceptional. Every piece I've purchased has become the centerpiece of my room. LUXE understands what true luxury means."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="Sarah Mitchell">
+                        <div class="author-info">
+                            <h4>Sarah Mitchell</h4>
+                            <p>Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="testimonial-text">"From the consultation to delivery, the entire experience was flawless. My new sofa is beyond stunning. Worth every penny."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="James Wilson">
+                        <div class="author-info">
+                            <h4>James Wilson</h4>
+                            <p>Architect</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                    </div>
+                    <p class="testimonial-text">"I've furnished three properties with LUXE pieces. The craftsmanship is unmatched, and the customer service is exceptional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop" alt="Emily Chen">
+                        <div class="author-info">
+                            <h4>Emily Chen</h4>
+                            <p>Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=700&h=500&fit=crop" alt="Our Workshop">
+                </div>
+                <div class="about-content">
+                    <span class="about-label">Our Story</span>
+                    <h2 class="about-title">Crafting Excellence Since 1985</h2>
+                    <p class="about-text">For over three decades, LUXE has been at the forefront of luxury furniture design. Our passion lies in creating pieces that not only enhance your living spaces but also become cherished heirlooms for generations.</p>
+                    <p class="about-text">Every piece in our collection is crafted with meticulous attention to detail, using only the finest materials sourced from sustainable suppliers around the world.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">38+</span>
+                            <span class="stat-label">Years of Excellence</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15K+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Unique Designs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Visit Our Showroom</h3>
+                        <p>123 Design Avenue<br>New York, NY 10001</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Contact Us</h3>
+                        <p>info@luxefurniture.com<br>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Showroom Hours</h3>
+                        <p>Mon - Fri: 10am - 7pm<br>Sat - Sun: 11am - 5pm</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">LUXE</a>
+                    <p class="footer-tagline">Elevating spaces, enriching lives through exceptional furniture design.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">in</a>
+                        <a href="#" class="social-link">pin</a>
+                        <a href="#" class="social-link">ig</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html">Sofas</a></li>
+                        <li><a href="products.html">Chairs</a></li>
+                        <li><a href="products.html">Tables</a></li>
+                        <li><a href="products.html">Beds</a></li>
+                        <li><a href="products.html">Lighting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Care Guide</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 LUXE Furniture. All rights reserved.</p>
+                <p class="developer-credit">Developed by <strong>Perarasu .R</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
